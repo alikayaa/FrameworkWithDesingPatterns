@@ -1,0 +1,43 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Threading.Tasks" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ output extension=".cs" #>
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+using DAI.Orm;
+using DAI.Orm.Context;
+using DAI.Orm.Attributes;
+namespace DAI.Rule.Validation.Definition
+
+{
+	public class AutoContext:BaseContext
+	{	
+			<#
+			string CONNECTIONSTRING = @"Data Source=WINDOZE\SQLEXPRESS;Initial Catalog=DAI;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+			SqlConnection _con = new SqlConnection(CONNECTIONSTRING);
+			_con.Open();
+			SqlCommand _comm = new SqlCommand("SELECT * FROM DAI_ORM_TABLES_INSTANCE",_con);
+			var reader = _comm.ExecuteReader();
+			while(reader.Read()){
+			#>
+				public DAIList<<#= reader["Name"] #>> <#= reader["Name"] #> = new DAIList<<#= reader["Name"] #>>();
+			<#
+			
+	}	
+	#>
+	}
+}

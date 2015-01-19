@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAI.Cryptography.ISimetricCryphtographer">
+    <Position X="8" Y="9" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAAAAAgAAAAQAAAEAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>AbstractCipherTypeClasses\ISimetricCryphtographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.ICryphtographerAbstractFactory">
+    <Position X="3.25" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>AbstractFactory\ICryphtographerAbstractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.MD5Cryptographer">
+    <Position X="4" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AsimetricCryphtographer\MD5Cryptographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.SHACryphtographer">
+    <Position X="0.5" Y="15" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AsimetricCryphtographer\SHACryphtographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.HardestCryphtographerFactory">
+    <Position X="2" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAGAAAAAAAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>ConcreateFactoryClasses\HardestCryphtographerFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parameter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAI.Cryptography.SimpleCryphtographerFactory">
+    <Position X="5.25" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAGAAAAAAAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>ConcreateFactoryClasses\SimpleCryphtographerFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parameter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAI.Cryptography.CryptographerManager">
+    <Position X="8.5" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAEIAAAAAAAAAAAAAgABAAAAAAAAAACEAEAAA=</HashCode>
+      <FileName>Façade\CryptographerManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="criptographerFactory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DAI.Cryptography.CryphtographerParameter" Collapsed="true">
+    <Position X="4" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAABAAQIAQAAAAIAAAAAAAAAAABAEAAAAAA=</HashCode>
+      <FileName>ParameterDTO\CryphtographerParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.AESCryptographer">
+    <Position X="6" Y="12.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAABACAQAQAAAAIAAAAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>SimetricCryphtographer\AESCryptographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.RijndaelCryptographer">
+    <Position X="9.25" Y="12.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAQAAAgAAQgAAAAAAAAAAAAAAAAAAAAAAAQAQ=</HashCode>
+      <FileName>SimetricCryphtographer\RijndaelCryptographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Cryptography.IAsimetricCryphtographer">
+    <Position X="2.5" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractCipherTypeClasses\IAsimetricCryphtographer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DAI.Cryptography.CryptoAlgorithmType">
+    <Position X="8.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Enums\CryptoAlgorithmType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

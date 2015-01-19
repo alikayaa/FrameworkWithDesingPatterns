@@ -1,0 +1,1 @@
+﻿DAI.Orm.Test.Category, DAI.Orm.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null#DAI.Orm.Test.Person, DAI.Orm.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null#DAI.Orm.Test.Product, DAI.Orm.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null

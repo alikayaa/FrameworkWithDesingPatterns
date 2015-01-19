@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAI.Exception.HtmlExceptionFormatter" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ExceptionFormatter\HtmlExceptionFormatter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DAI.Exception.TextExceptionFormatter" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ExceptionFormatter\TextExceptionFormatter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DAI.Exception.ExceptionHandling">
+    <Position X="5.75" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIAAAAAAAAAAAAAAEAAAABAEAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ExceptionHandling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAI.Exception.ExceptionManager">
+    <Position X="7.25" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAIAAAAAAAAAAQAAACAAAABAAAQAAACAAgAAAAA=</HashCode>
+      <FileName>ExceptionManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="exceptionFormatter" />
+      <Property Name="ExHandler" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="DAI.Exception.IExceptionFormatter">
+    <Position X="2.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ExceptionFormatter\IExceptionFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DAI.Exception.ExceptionTypes" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>s4giSMxIAIAqAQgSWAWIBUCARIo4EcAQB2FgUHRINs0=</HashCode>
+      <FileName>ExceptionTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
